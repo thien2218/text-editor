@@ -1,0 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: rgb(124, 124, 253);
+    font-weight: bolder;
+    margin: 30px;
+}
+
+.editBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(117, 112, 112, 0.5)
+}
+
+button{
+    margin: 10px 10px 20px 10px;
+    padding: 7px 10px;
+    background-color: rgba(170, 168, 168, 0.1);
+    outline: none;
+    border: none;
+    transition: .7s ease;
+}
+
+input[type="radio"]{
+    margin: 10px 10px 20px 10px;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: rgba(170, 168, 168, 0.1);
+    height: min-content;
+    padding: 7px 10px;
+    transition: .7s ease;
+}
+
+button:hover,
+input[type="radio"]:hover{
+    background-color: rgba(170, 168, 168, 0.4);
+    cursor: pointer;
+}
+
+.active,
+input[type="radio"]:checked{
+    background-color: rgba(170, 168, 168, 0.6);
+}
+
+.txtArea{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.txtArea .format{
+    position: relative;
+    text-align: center;
+    font-size: 1.3em;
+    width: 47%;
+    height: calc(310px + 1.3em);
+}
+
+#text-input{
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    outline: none;
+    padding: 5px;
+    font-size: 1.0em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#text-output{
+    width: calc(100% - 10px);
+    height: 290px;
+    margin-top: 10px;
+    font-size: 1.0em;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(155, 155, 155, 0.2);
+    text-align: start;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}

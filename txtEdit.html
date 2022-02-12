@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <title>TextEditor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="txtEdit.css">
+        <script src="https://kit.fontawesome.com/2581aa715f.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <div class="heading">TextEditor</div>
+            <div class="editBtn">
+                <button id="btn1" onclick="boldText(this)">Bold</button>
+                <button id="btn2" onclick="italicText(this)">Italic</button>
+                <button id="btn3" onclick="underlineText(this)">Underline</button>
+                <input type="radio" name="align" class="fas fa-align-left" onclick="alignText(this, 'left')" checked>
+                <input type="radio" name="align" class="fas fa-align-center" onclick="alignText(this, 'center')">
+                <input type="radio" name="align" class="fas fa-align-right" onclick="alignText(this, 'right')">
+            </div>
+            <div class="txtArea">
+                <div class="format">
+                    <label for="text-input">Your Document Text</label>
+                    <textarea id="text-input" id="" cols="30" rows="20" oninput="updateText()"></textarea>
+                </div>
+                <div class="format">
+                    <label for="text-output">Formatted Text</label>
+                    <div id="text-output"></div>
+                </div>
+            </div>
+        </main>
+        <script src="txtEdit.js"></script>
+    </body>
+</html>
